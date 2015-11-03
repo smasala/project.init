@@ -10,10 +10,19 @@ Run the following command to start the file watcher
     
 ### Modules
 
-```Grunt Dev``` mode activates the following modules:
+```grunt dev``` mode activates the following modules under a  file watcher:
 
 * Browsify with Babelify (Babel)
 * JSCS
 * JSHint
 * SASS
+
+```grunt prod``` mode fires the following modules:
+
+* Version bump
+* Browsify with Babelify (Babel)
+* JSCS
+* JSHint
+* SASS
+
     
