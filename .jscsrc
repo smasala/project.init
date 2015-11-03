@@ -22,7 +22,6 @@
     ],
 	"excludeFiles": [
 		"**/node_modules/**",
-		"**/bower_components/**",
-		"./src/firebrick.ui.all.js"
+		"**/bower_components/**"
 	]
 }
