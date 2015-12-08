@@ -66,13 +66,15 @@ module.exports = function(grunt){
         jscs: {
             src: "./src/**/*.js",
             options: {
-                config: ".jscsrc"
+                config: ".jscsrc",
+                force: true
             }
         },
         jshint: {
             options: {
                 jshintrc: ".jshintrc",
-                reporter: require( "jshint-stylish" )
+                reporter: require( "jshint-stylish" ),
+                force: true
             },
             all: {
                 src: [ "Gruntfile.js", "./src/**/*.js" ]
