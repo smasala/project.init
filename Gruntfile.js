@@ -2,8 +2,6 @@
 module.exports = function(grunt){
     'use strict';
     
-    var tasks = [];
-
     grunt.loadNpmTasks("grunt-babel");
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-version");
