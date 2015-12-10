@@ -16,6 +16,7 @@ Run the following command to start the file watcher
 * JSCS
 * JSHint
 * SASS
+* Http-server
 
 ```grunt prod``` mode fires the following modules:
 
