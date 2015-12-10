@@ -18,7 +18,7 @@ module.exports = function(grunt){
               logConcurrentOutput: true
             },
             dev: {
-              tasks: ["http-server", "watch:browserify", "watch:codestyle", "watch:css"]
+              tasks: ["http-server", "watch:allJS", "watch:css"]
             }
         },
         watch: {
@@ -33,6 +33,10 @@ module.exports = function(grunt){
             browserify: {
                 files: [ "./src/**/*.js"  ],
                 tasks: [ "browserify" ]
+            },
+            allJS: {
+                files: [ "./src/**/*.js"  ],
+                tasks: [ "browserify", "jscs", "jshint" ]
             }
         },
         version: {
