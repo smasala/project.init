@@ -94,7 +94,7 @@ module.exports = function(grunt){
     });
     
     
-    grunt.registerTask("dev", ["concurrent:dev"]);
+    grunt.registerTask("dev", ["browserify", "sass", "jscs", "jshint", "concurrent:dev"]);
     grunt.registerTask("prod", ["version", "browserify", "sass", "jscs", "jshint"]);
     //grunt.registerTask("default", []);
 };
