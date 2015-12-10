@@ -10,6 +10,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-concurrent");
     grunt.loadNpmTasks("grunt-sass");
+    grunt.loadNpmTasks("grunt-http-server");
 
     grunt.initConfig({
         concurrent: {
@@ -17,7 +18,7 @@ module.exports = function(grunt){
               logConcurrentOutput: true
             },
             dev: {
-              tasks: ["watch:browserify", "watch:codestyle", "watch:css"]
+              tasks: ["http-server", "watch:browserify", "watch:codestyle", "watch:css"]
             }
         },
         watch: {
@@ -89,6 +90,29 @@ module.exports = function(grunt){
                     src: ['**/*.js'],
                     dest: 'dist/'
                 }]
+            }
+        },
+        "http-server": {
+            dev: {
+                // the server root directory 
+                root: "./",
+                // the server port 
+                // can also be written as a function, e.g. 
+                // port: function() { return 8282; } 
+                port: 8080,
+                // the host ip address 
+                // If specified to, for example, "127.0.0.1" the server will 
+                // only be available on that ip. 
+                // Specify "0.0.0.0" to be available everywhere 
+                host: "localhost",
+                showDir : true,
+                autoIndex: true,
+                // server default file extension 
+                ext: "html",
+                // run in parallel with other tasks 
+                runInBackground: false,
+                // Tell grunt task to open the browser 
+                openBrowser : true
             }
         }
     });
