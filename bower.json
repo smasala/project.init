@@ -1,0 +1,19 @@
+{
+	"name": "project.init",
+	"description": "Get your project up and running quickly with this JavaScript web application environment",
+	"version": "1.1.1",
+	"license": "MIT",
+	"homepage": "https://github.com/smasala/project.init",
+	"ignore": [""],
+	"authors": [
+		"Steven Masala"
+	],
+	"keywords" : [ 
+		"javascript",
+		"server",
+		"init",
+		"project",
+		"web",
+		"application"
+	]
+}
