@@ -18,7 +18,7 @@ Run the following command to start the file watcher
     
 ### Modules
 
-```grunt dev``` mode activates the following modules under a  file watcher:
+`grunt dev` mode activates the following modules under a  file watcher:
 
 * Browsify with Babelify (Babel)
 * JSCS
@@ -26,7 +26,7 @@ Run the following command to start the file watcher
 * SASS
 * Http-server
 
-```grunt prod``` mode fires the following modules:
+`grunt prod` mode fires the following modules:
 
 * Version bump
 * Browsify with Babelify (Babel)
@@ -34,4 +34,4 @@ Run the following command to start the file watcher
 * JSHint
 * SASS
 
-    
+`npm test` runs the jasmine test specs
