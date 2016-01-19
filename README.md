@@ -4,6 +4,14 @@ Clone this project to have a working project environment for your latest JavaScr
 
 ## Getting Started
 
+### Installation
+
+	npm install
+	
+Make sure grunt is installed globally
+
+	npm install grunt-cli -g
+
 Run the following command to start the file watcher
 
     grunt dev
